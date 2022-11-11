@@ -1,13 +1,26 @@
 import React from 'react';
 
 
-function Numbers(){
+function Numbers({selectNumber = f => f}){
+
+  const [selected, setNumber] = React.useState('');
+
+  const handleClick = (event) => {
+    event.preventDefault();
+
+
+
+    setNumber(selected.concat(event.target.innerHTML));
+  }
+
+
 
   return (
     <div>
+      {typeof selected === 'string' ? selected : ''}
       <div>
-      <button>7</button>
-      <button>8</button>
+      <button onClick={handleClick}>7</button>
+      <button onClick={handleClick}>8</button>
       <button>9</button>
      </div>
      <div>

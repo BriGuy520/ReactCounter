@@ -23,6 +23,7 @@ function Numbers({numberClick = f => f}){
      <div>
       <button onClick={numberClick}>0</button>
       <button onClick={numberClick}>.</button>
+      <button onClick={numberClick}>=</button>
      </div>
      
     </div>

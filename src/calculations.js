@@ -1,8 +1,12 @@
-export function addition(num){
-  console.log("add " + num);
+export function addition(num, total){
+
+  return Number(num) + total;
+
 }
 
 export function subtract(num){ 
+
+
   console.log("substract " + num); 
 }
 

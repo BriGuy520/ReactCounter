@@ -1,9 +1,9 @@
 
-function Result(){
+function Result({selected}){
 
   return (
     <div>
-      <input />
+      <input value={selected} />
     </div>
   );
 

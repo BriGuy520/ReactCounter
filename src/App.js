@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    <h1>ReactCalculator</h1>
+    <h1>React Calculator</h1>
     <Calculator />
     </>
   );
